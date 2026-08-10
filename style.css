@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  background: transparent;
+}
+
+.home,
+.keyboards,
+.contact {
+  height: 100vh;
+}
+
+h2 {
+  color: white;
+  font-family: "Rubik Mono One";
+}
+
+.accordion h2 {
+  font-family: monospace;
+}
+
+label {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+#faq {
+  scroll-margin-top: 7rem;
+}
+
+.keyboards {
+  min-height: 100vh;
+  height: auto;
+  padding: 20px 0;
+  scroll-margin-top: 20px;
+  padding-top: 70px;
+}
+
+.card-img-top {
+  height: 390px;
+  object-fit: cover;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: "Lobster";
+}
+
+.nav-link {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.carousel {
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+  font-family: "Rubik Mono One";
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  background: rgba(20, 24, 35, 0.92);
+  border: 1px solid rgba(120, 130, 160, 0.25);
+  color: #f5f5f5;
+}
+
+.nav-link {
+  position: relative;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 2px;
+  height: 2px;
+  background: #ffc107;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .btn-warning {
+  transition: all 0.3s ease;
+}
+
+.navbar .btn-warning:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.35);
+}
+
+.card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-color: rgba(255, 193, 7, 0.65);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.45),
+    0 0 20px rgba(255, 193, 7, 0.12);
+}
+
+.card-img-top {
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.06);
+}
+
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: #ffc107;
+}
+
+.card .btn {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.keyboards form .form-control {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.keyboards form .form-control:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.2);
+}
+
+.keyboards form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.25);
+  transition: all 0.3s ease;
+}
+
+.dropdown-toggle {
+  transition: all 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+.page-link {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.page-link:hover {
+  transform: translateY(-3px);
+  background-color: #ffc107;
+  color: #111;
+  border-color: #ffc107;
+}
+
+.carousel-item img {
+  transition: transform 6s ease;
+}
+
+.carousel-item.active img {
+  transform: scale(1.03);
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.carousel-caption h5:hover {
+  transform: translateY(-4px);
+  color: #ffc107;
+}
+
+.contact .form-control {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.contact .form-control:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.18);
+  transform: translateY(-2px);
+}
+
+.contact .btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-item {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.accordion-button {
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.about-us .card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.about-us .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-brand {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  display: inline-block;
+}
+
+.navbar-brand:hover {
+  color: #ffc107;
+  transform: scale(1.05);
+}
+
+.contact .card {
+  background: #222;
+  padding: 30px;
+  border-radius: 20px;
+  border: none;
+}
