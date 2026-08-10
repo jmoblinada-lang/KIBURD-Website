@@ -89,12 +89,12 @@ p {
 }
 
 .carousel-caption h5 {
-  font-size: 3rem;
+  font-size: clamp(1.3rem, 4vw, 3rem);
   font-family: "Rubik Mono One";
 }
 
 .carousel-caption p {
-  font-size: 1.2rem;
+  font-size: clamp(0.75rem, 1.5vw, 1.2rem);
   font-family: monospace;
 }
 
@@ -313,11 +313,4 @@ p {
 .navbar-brand:hover {
   color: #ffc107;
   transform: scale(1.05);
-}
-
-.contact .card {
-  background: #222;
-  padding: 30px;
-  border-radius: 20px;
-  border: none;
 }
